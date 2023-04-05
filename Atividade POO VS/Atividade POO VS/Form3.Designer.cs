@@ -59,7 +59,7 @@
             // 
             lblresult.AutoSize = true;
             lblresult.Font = new Font("Arial Narrow", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
-            lblresult.Location = new Point(309, 141);
+            lblresult.Location = new Point(12, 141);
             lblresult.Name = "lblresult";
             lblresult.Size = new Size(146, 33);
             lblresult.TabIndex = 19;
@@ -100,10 +100,11 @@
             // txtresult
             // 
             txtresult.Font = new Font("Arial Narrow", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
-            txtresult.Location = new Point(486, 138);
+            txtresult.Location = new Point(12, 177);
             txtresult.Name = "txtresult";
-            txtresult.Size = new Size(227, 41);
+            txtresult.Size = new Size(701, 41);
             txtresult.TabIndex = 27;
+            txtresult.TextChanged += txtresult_TextChanged;
             // 
             // Form3
             // 

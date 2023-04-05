@@ -40,5 +40,10 @@ namespace Atividade_POO_VS
 
             txtnum.Focus();
         }
+
+        private void txtresult_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

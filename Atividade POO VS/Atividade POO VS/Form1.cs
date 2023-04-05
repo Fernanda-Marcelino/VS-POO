@@ -13,5 +13,24 @@ namespace Atividade_POO_VS
             Form2 fm = new Form2();
             fm.Show();
         }
+
+        private void atvidadesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void postoDeCombustívelToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form2 fm = new Form2();
+            fm.Show();
+        }
+
+        private void tabuada1ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form3 fm = new Form3();
+            fm.Show();
+        }
     }
 }

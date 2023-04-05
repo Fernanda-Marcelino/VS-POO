@@ -34,6 +34,7 @@
             menuStrip1 = new MenuStrip();
             atvidadesToolStripMenuItem = new ToolStripMenuItem();
             postoDeCombustívelToolStripMenuItem = new ToolStripMenuItem();
+            tabuada1ToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -78,16 +79,25 @@
             // 
             // atvidadesToolStripMenuItem
             // 
-            atvidadesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { postoDeCombustívelToolStripMenuItem });
+            atvidadesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { postoDeCombustívelToolStripMenuItem, tabuada1ToolStripMenuItem });
             atvidadesToolStripMenuItem.Name = "atvidadesToolStripMenuItem";
             atvidadesToolStripMenuItem.Size = new Size(71, 20);
             atvidadesToolStripMenuItem.Text = "Atvidades";
+            atvidadesToolStripMenuItem.Click += atvidadesToolStripMenuItem_Click;
             // 
             // postoDeCombustívelToolStripMenuItem
             // 
             postoDeCombustívelToolStripMenuItem.Name = "postoDeCombustívelToolStripMenuItem";
             postoDeCombustívelToolStripMenuItem.Size = new Size(190, 22);
             postoDeCombustívelToolStripMenuItem.Text = "Posto de Combustível";
+            postoDeCombustívelToolStripMenuItem.Click += postoDeCombustívelToolStripMenuItem_Click;
+            // 
+            // tabuada1ToolStripMenuItem
+            // 
+            tabuada1ToolStripMenuItem.Name = "tabuada1ToolStripMenuItem";
+            tabuada1ToolStripMenuItem.Size = new Size(190, 22);
+            tabuada1ToolStripMenuItem.Text = "Tabuada 1";
+            tabuada1ToolStripMenuItem.Click += tabuada1ToolStripMenuItem_Click;
             // 
             // Form1
             // 
@@ -117,5 +127,6 @@
         private MenuStrip menuStrip1;
         private ToolStripMenuItem atvidadesToolStripMenuItem;
         private ToolStripMenuItem postoDeCombustívelToolStripMenuItem;
+        private ToolStripMenuItem tabuada1ToolStripMenuItem;
     }
 }

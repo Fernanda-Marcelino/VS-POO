@@ -11,7 +11,7 @@ namespace Atividade_POO_VS
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new início());
+            Application.Run(new Form1());
         }
     }
 }
