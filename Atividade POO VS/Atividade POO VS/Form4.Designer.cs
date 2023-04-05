@@ -70,7 +70,7 @@
             // btncalc
             // 
             btncalc.Font = new Font("Arial Narrow", 21.75F, FontStyle.Bold, GraphicsUnit.Point);
-            btncalc.Location = new Point(124, 315);
+            btncalc.Location = new Point(130, 315);
             btncalc.Name = "btncalc";
             btncalc.Size = new Size(129, 41);
             btncalc.TabIndex = 31;

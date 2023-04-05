@@ -19,7 +19,7 @@ namespace Atividade_POO_VS
 
         private void btncalc_Click(object sender, EventArgs e)
         {
-            double num, result, i; 
+            double num, result, i;
 
             num = Convert.ToDouble(txtnum.Text);
             for (i = 1; i <= 10; i++)
@@ -27,6 +27,21 @@ namespace Atividade_POO_VS
                 result = num * i;
                 txtresult.Text = String.Concat(txtresult.Text, "\n\n", num.ToString() + "X" + i.ToString() + "=" + result.ToString());
             }
+        }
+
+        private void btnlimpar_Click(object sender, EventArgs e)
+        {
+            txtnum.Clear();
+            txtresult.Clear();
+
+            txtnum.Focus();
+        }
+
+        private void btnvoltar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 fm = new Form1();
+            fm.Show();
         }
     }
 }

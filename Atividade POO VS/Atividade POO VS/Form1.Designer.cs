@@ -38,6 +38,7 @@
             tabuada2ToolStripMenuItem = new ToolStripMenuItem();
             tabuada3ToolStripMenuItem = new ToolStripMenuItem();
             eleiçãoToolStripMenuItem = new ToolStripMenuItem();
+            sairToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -73,7 +74,7 @@
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { atividadesToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { atividadesToolStripMenuItem, sairToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(800, 24);
@@ -119,6 +120,13 @@
             eleiçãoToolStripMenuItem.Name = "eleiçãoToolStripMenuItem";
             eleiçãoToolStripMenuItem.Size = new Size(190, 22);
             eleiçãoToolStripMenuItem.Text = "Eleição";
+            eleiçãoToolStripMenuItem.Click += eleiçãoToolStripMenuItem_Click;
+            // 
+            // sairToolStripMenuItem
+            // 
+            sairToolStripMenuItem.Name = "sairToolStripMenuItem";
+            sairToolStripMenuItem.Size = new Size(37, 20);
+            sairToolStripMenuItem.Text = "sair";
             // 
             // Form1
             // 
@@ -151,5 +159,6 @@
         private ToolStripMenuItem tabuada2ToolStripMenuItem;
         private ToolStripMenuItem tabuada3ToolStripMenuItem;
         private ToolStripMenuItem eleiçãoToolStripMenuItem;
+        private ToolStripMenuItem sairToolStripMenuItem;
     }
 }

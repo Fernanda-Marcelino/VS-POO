@@ -60,5 +60,12 @@ namespace Atividade_POO_VS
             Form4 fm = new Form4();
             fm.Show();
         }
+
+        private void eleiçãoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form6 fm = new Form6();
+            fm.Show();
+        }
     }
 }

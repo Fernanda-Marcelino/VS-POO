@@ -54,6 +54,7 @@
             btnvoltar.TabIndex = 33;
             btnvoltar.Text = "Voltar";
             btnvoltar.UseVisualStyleBackColor = true;
+            btnvoltar.Click += btnvoltar_Click;
             // 
             // btnlimpar
             // 
@@ -64,6 +65,7 @@
             btnlimpar.TabIndex = 32;
             btnlimpar.Text = "Limpar";
             btnlimpar.UseVisualStyleBackColor = true;
+            btnlimpar.Click += btnlimpar_Click;
             // 
             // btncalc
             // 

@@ -45,5 +45,12 @@ namespace Atividade_POO_VS
         {
 
         }
+
+        private void btnvoltar_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 fm = new Form1();
+            fm.Show();
+        }
     }
 }
