@@ -32,9 +32,12 @@
             lblnomes = new Label();
             lbltitulo = new Label();
             menuStrip1 = new MenuStrip();
-            atvidadesToolStripMenuItem = new ToolStripMenuItem();
+            atividadesToolStripMenuItem = new ToolStripMenuItem();
             postoDeCombustívelToolStripMenuItem = new ToolStripMenuItem();
             tabuada1ToolStripMenuItem = new ToolStripMenuItem();
+            tabuada2ToolStripMenuItem = new ToolStripMenuItem();
+            tabuada3ToolStripMenuItem = new ToolStripMenuItem();
+            eleiçãoToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -70,34 +73,52 @@
             // 
             // menuStrip1
             // 
-            menuStrip1.Items.AddRange(new ToolStripItem[] { atvidadesToolStripMenuItem });
+            menuStrip1.Items.AddRange(new ToolStripItem[] { atividadesToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new Size(800, 24);
             menuStrip1.TabIndex = 7;
             menuStrip1.Text = "menuStrip1";
             // 
-            // atvidadesToolStripMenuItem
+            // atividadesToolStripMenuItem
             // 
-            atvidadesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { postoDeCombustívelToolStripMenuItem, tabuada1ToolStripMenuItem });
-            atvidadesToolStripMenuItem.Name = "atvidadesToolStripMenuItem";
-            atvidadesToolStripMenuItem.Size = new Size(71, 20);
-            atvidadesToolStripMenuItem.Text = "Atvidades";
-            atvidadesToolStripMenuItem.Click += atvidadesToolStripMenuItem_Click;
+            atividadesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { postoDeCombustívelToolStripMenuItem, tabuada1ToolStripMenuItem, tabuada2ToolStripMenuItem, tabuada3ToolStripMenuItem, eleiçãoToolStripMenuItem });
+            atividadesToolStripMenuItem.Name = "atividadesToolStripMenuItem";
+            atividadesToolStripMenuItem.Size = new Size(74, 20);
+            atividadesToolStripMenuItem.Text = "Atividades";
             // 
             // postoDeCombustívelToolStripMenuItem
             // 
             postoDeCombustívelToolStripMenuItem.Name = "postoDeCombustívelToolStripMenuItem";
             postoDeCombustívelToolStripMenuItem.Size = new Size(190, 22);
             postoDeCombustívelToolStripMenuItem.Text = "Posto de Combustível";
-            postoDeCombustívelToolStripMenuItem.Click += postoDeCombustívelToolStripMenuItem_Click;
+            postoDeCombustívelToolStripMenuItem.Click += postoDeCombustívelToolStripMenuItem_Click_1;
             // 
             // tabuada1ToolStripMenuItem
             // 
             tabuada1ToolStripMenuItem.Name = "tabuada1ToolStripMenuItem";
             tabuada1ToolStripMenuItem.Size = new Size(190, 22);
             tabuada1ToolStripMenuItem.Text = "Tabuada 1";
-            tabuada1ToolStripMenuItem.Click += tabuada1ToolStripMenuItem_Click;
+            tabuada1ToolStripMenuItem.Click += tabuada1ToolStripMenuItem_Click_1;
+            // 
+            // tabuada2ToolStripMenuItem
+            // 
+            tabuada2ToolStripMenuItem.Name = "tabuada2ToolStripMenuItem";
+            tabuada2ToolStripMenuItem.Size = new Size(190, 22);
+            tabuada2ToolStripMenuItem.Text = "Tabuada 2";
+            tabuada2ToolStripMenuItem.Click += tabuada2ToolStripMenuItem_Click_1;
+            // 
+            // tabuada3ToolStripMenuItem
+            // 
+            tabuada3ToolStripMenuItem.Name = "tabuada3ToolStripMenuItem";
+            tabuada3ToolStripMenuItem.Size = new Size(190, 22);
+            tabuada3ToolStripMenuItem.Text = "Tabuada 3";
+            // 
+            // eleiçãoToolStripMenuItem
+            // 
+            eleiçãoToolStripMenuItem.Name = "eleiçãoToolStripMenuItem";
+            eleiçãoToolStripMenuItem.Size = new Size(190, 22);
+            eleiçãoToolStripMenuItem.Text = "Eleição";
             // 
             // Form1
             // 
@@ -109,7 +130,6 @@
             Controls.Add(lblnomes);
             Controls.Add(lbltitulo);
             Controls.Add(menuStrip1);
-            MainMenuStrip = menuStrip1;
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
@@ -125,8 +145,11 @@
         private Label lblnomes;
         private Label lbltitulo;
         private MenuStrip menuStrip1;
-        private ToolStripMenuItem atvidadesToolStripMenuItem;
+        private ToolStripMenuItem atividadesToolStripMenuItem;
         private ToolStripMenuItem postoDeCombustívelToolStripMenuItem;
         private ToolStripMenuItem tabuada1ToolStripMenuItem;
+        private ToolStripMenuItem tabuada2ToolStripMenuItem;
+        private ToolStripMenuItem tabuada3ToolStripMenuItem;
+        private ToolStripMenuItem eleiçãoToolStripMenuItem;
     }
 }
