@@ -177,7 +177,7 @@
             Controls.Add(lbltipo2);
             Controls.Add(lbltipo);
             Name = "Form2";
-            Text = "Form2";
+            Text = "Posto de Combustível";
             ResumeLayout(false);
             PerformLayout();
         }
