@@ -184,7 +184,7 @@
             Controls.Add(lbltipo2);
             Controls.Add(lblvotos);
             Name = "Form6";
-            Text = "Form6";
+            Text = "Eleição";
             ResumeLayout(false);
             PerformLayout();
         }

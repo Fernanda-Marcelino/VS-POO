@@ -120,7 +120,7 @@
             Controls.Add(txtnum);
             Controls.Add(lblnum);
             Name = "Form5";
-            Text = "Form5";
+            Text = "Tabuada For";
             ResumeLayout(false);
             PerformLayout();
         }

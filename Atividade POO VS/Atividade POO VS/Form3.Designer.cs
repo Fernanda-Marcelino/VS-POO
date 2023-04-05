@@ -120,7 +120,7 @@
             Controls.Add(txtnum);
             Controls.Add(lblnum);
             Name = "Form3";
-            Text = "Form3";
+            Text = "Tabuada While";
             ResumeLayout(false);
             PerformLayout();
         }

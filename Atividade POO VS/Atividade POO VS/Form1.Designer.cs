@@ -139,7 +139,7 @@
             Controls.Add(lbltitulo);
             Controls.Add(menuStrip1);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Início";
             Load += Form1_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
