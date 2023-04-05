@@ -31,6 +31,10 @@
             lblano = new Label();
             lblnomes = new Label();
             lbltitulo = new Label();
+            menuStrip1 = new MenuStrip();
+            atvidadesToolStripMenuItem = new ToolStripMenuItem();
+            postoDeCombustívelToolStripMenuItem = new ToolStripMenuItem();
+            menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // lblano
@@ -63,16 +67,44 @@
             lbltitulo.TabIndex = 4;
             lbltitulo.Text = "Atividade POO";
             // 
+            // menuStrip1
+            // 
+            menuStrip1.Items.AddRange(new ToolStripItem[] { atvidadesToolStripMenuItem });
+            menuStrip1.Location = new Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new Size(800, 24);
+            menuStrip1.TabIndex = 7;
+            menuStrip1.Text = "menuStrip1";
+            // 
+            // atvidadesToolStripMenuItem
+            // 
+            atvidadesToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { postoDeCombustívelToolStripMenuItem });
+            atvidadesToolStripMenuItem.Name = "atvidadesToolStripMenuItem";
+            atvidadesToolStripMenuItem.Size = new Size(71, 20);
+            atvidadesToolStripMenuItem.Text = "Atvidades";
+            // 
+            // postoDeCombustívelToolStripMenuItem
+            // 
+            postoDeCombustívelToolStripMenuItem.Name = "postoDeCombustívelToolStripMenuItem";
+            postoDeCombustívelToolStripMenuItem.Size = new Size(190, 22);
+            postoDeCombustívelToolStripMenuItem.Text = "Posto de Combustível";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ButtonShadow;
             ClientSize = new Size(800, 450);
             Controls.Add(lblano);
             Controls.Add(lblnomes);
             Controls.Add(lbltitulo);
+            Controls.Add(menuStrip1);
+            MainMenuStrip = menuStrip1;
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -82,5 +114,8 @@
         private Label lblano;
         private Label lblnomes;
         private Label lbltitulo;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem atvidadesToolStripMenuItem;
+        private ToolStripMenuItem postoDeCombustívelToolStripMenuItem;
     }
 }
